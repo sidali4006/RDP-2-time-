@@ -1,5 +1,4 @@
-name: Ubuntu Desktop with noVNC and Tunnel # This should be 'name', not 'Name' and at the top
-
+name: Ubuntu Desktop with noVNC and Tunnel
 on:
   workflow_dispatch:
 
@@ -8,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Install dependencies # This 'name' is for the step
+    - name: Install dependencies
       run: |
         sudo apt update
         sudo apt install -y xfce4 xfce4-goodies tightvncserver git curl wget openssh-client
